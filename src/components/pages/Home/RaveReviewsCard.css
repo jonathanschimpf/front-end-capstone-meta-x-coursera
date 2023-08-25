@@ -1,0 +1,36 @@
+.rave-reviews-card {
+  grid-column: auto;
+  grid-row: 2;
+  min-height: 22.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 0.35rem;
+}
+
+.rave-reviews-card img {
+  width: 8rem;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 50%;
+}
+
+.rave-reviews-card h4 {
+  margin: 0 auto 1rem auto;
+}
+
+.rave-reviews-card span {
+  color: #F4CE14;
+}
+
+/* ------------------------------------------------ */
+/* // MEDIA QUERIES BELOW FOR RESPONSIVE DESIGN // */
+/* ------------------------------------------------ */
+
+@media (max-width: 949px) {
+.rave-reviews-card {
+  grid-column: auto;
+  grid-row: auto;
+}
+}
