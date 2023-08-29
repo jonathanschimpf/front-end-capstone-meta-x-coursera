@@ -11,6 +11,7 @@ const RaveReviewsCard = ({ customer }) => {
   return (
     <article className="rave-reviews-card">
       <img src={customer.image} alt={customer.fullName} />
+      <br/>
       <h4>{customer.fullName}</h4>
       <span>
         {customer.rating.map((ratingPoint, index) => 

@@ -29,9 +29,15 @@ const AboutUs = () => {
         <br/>
       </div>
       <div className="about-us-chefs">
-        <img src={littleLemonCookingTeamOne} alt="The Little Lemon Cooking Team #1" />
-        <img src={littleLemonCookingTeamTwo} alt="The Little Lemon Cooking Team #2" />
-        <img src={littleLemonCookingTeamThree} alt="The Little Lemon Cooking Team #3" />
+        <div className="about-us-image-div1">
+        <img src={littleLemonCookingTeamOne} className="about-us-image-team1" alt="The Little Lemon Cooking Team #1" />
+        </div>
+        <div className="about-us-image-div2">
+        <img src={littleLemonCookingTeamTwo} className="about-us-image-team2" alt="The Little Lemon Cooking Team #2" />
+        </div>
+        <div className="about-us-image-div3">
+        <img src={littleLemonCookingTeamThree} className="about-us-image-team3"alt="The Little Lemon Cooking Team #3" />  
+        </div>
       </div>
     </section>
   );

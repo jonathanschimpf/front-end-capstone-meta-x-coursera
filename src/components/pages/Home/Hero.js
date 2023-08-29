@@ -24,7 +24,7 @@ const Hero = () => {
           </Link>
           </div>
         </div>
-        <div className="padmeuptop padmedownbelow">
+        <div className="padmeuptop hero-div-container padmedownbelow">
         <img 
           className="hero-image" 
           src={tastygrublittlelemon} 

@@ -9,6 +9,24 @@
   margin-bottom: 9.375rem;
 }
 
+.hero-div-container img.hero-image {
+  transition-duration: 4s; /* vendorless fallback */
+  -o-transition-duration: 4s; /* opera */
+  -ms-transition-duration: 4s; /* IE 10 */
+  -moz-transition-duration: 4s; /* Firefox */
+  -webkit-duration: 4s; /*safari and chrome */
+}
+.hero-div-container:hover img.hero-image {
+  transition-duration: 4s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+} 
+
+
 .hero-information {
   grid-column: 1;
 }

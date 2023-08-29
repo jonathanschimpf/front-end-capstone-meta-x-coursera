@@ -14,6 +14,50 @@
   .about-us-description p {
     margin: 1.5em 0;
   }
+
+  .about-us-image-div1 img.about-us-image-team1 {
+    transition-duration: 4s; /* vendorless fallback */
+    -o-transition-duration: 4s; /* opera */
+    -ms-transition-duration: 4s; /* IE 10 */
+    -moz-transition-duration: 4s; /* Firefox */
+    -webkit-duration: 4s; /*safari and chrome */
+  }
+  .about-us-image-div2 img.about-us-image-team2 {
+    transition-duration: 4s; /* vendorless fallback */
+    -o-transition-duration: 4s; /* opera */
+    -ms-transition-duration: 4s; /* IE 10 */
+    -moz-transition-duration: 4s; /* Firefox */
+    -webkit-duration: 4s; /*safari and chrome */
+  }
+
+  .about-us-image-div3 img.about-us-image-team3  {
+    transition-duration: 4s; /* vendorless fallback */
+    -o-transition-duration: 4s; /* opera */
+    -ms-transition-duration: 4s; /* IE 10 */
+    -moz-transition-duration: 4s; /* Firefox */
+    -webkit-duration: 4s; /*safari and chrome */
+  }
+  .about-us-image-div1:hover img.about-us-image-team1 {
+    transition-duration: 4s;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  } 
+
+  .about-us-image-div2:hover img.about-us-image-team2 {
+    transition-duration: 4s;
+    transition-delay: 0.2s;
+    transform: scale(1.1);
+  } 
+
+  .about-us-image-div3:hover img.about-us-image-team3 {
+    transition-duration: 4s;
+    transition-delay: 0.2s;
+    transform: scale(1.1);
+  } 
   
   
   .about-us-chefs {
@@ -29,6 +73,7 @@
   .about-us-chefs img {
     border-radius: 0.5rem;
     max-width: 20vw;
+    margin: 0.25rem;
 
   }
   

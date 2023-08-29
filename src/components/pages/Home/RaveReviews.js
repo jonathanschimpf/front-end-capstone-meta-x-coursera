@@ -9,8 +9,6 @@ import Headshot_KevinNguyen from './assets/Headshot_KevinNguyen.jpg';
 // The world’s most popular creative platform.
 // \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
-//THIS WORKS AUG 25 2023
-
 const customers = [
   {
     fullName: 'Sarah Garrison',
@@ -27,7 +25,7 @@ const customers = [
   {
     fullName: 'Isabela Santos',
     image: Headshot_IsabelaSantos,
-    rating: [1, 1, 1, 1,1],
+    rating: [1, 1, 1, 1],
     says: `As a foodie, I can be a tough critic, but Little Lemon impressed me beyond words. Their Bruschetta al Pomodoro was a work of art - fresh, flavorful, and beautifully presented. My taste buds were in heaven! The attention to detail in every dish and the warm hospitality made it a dining experience to remember. Already planning my next visit!`,
   },
   {
