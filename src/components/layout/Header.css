@@ -64,7 +64,12 @@ color: #F4CE14;
   text-decoration-color: #F4CE14;
 }
 
-@media only screen and (max-width: 992px) {
+/* .nav-bar .expanded {
+   background-color :#495E57;
+} */
+
+@media only screen and (max-width: 992px) {  
+
   .nav-bar {
     grid-template-columns: auto auto;
   }
@@ -84,11 +89,24 @@ color: #F4CE14;
     height: 100vh;
     top: 0;
     left: -50%;
-    background-color: #FFFFFF;
     z-index: 100;
   }
 
   .nav-bar-links li {
     flex-direction: column;
   }
+
+  a {
+    color: #FFFFFF;
+  }
+  .nav-bar .expanded {
+    background-color : #495E57;
+ }
+
+ ul.nav-bar-links.expanded {
+  border-bottom-right-radius: 2%; 
+  border-top-right-radius: 2%;
+  
+ }
 }
+
