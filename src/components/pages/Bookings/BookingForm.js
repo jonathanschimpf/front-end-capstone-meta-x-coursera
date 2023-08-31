@@ -27,30 +27,38 @@ const BookingForm = ({
     'Team Building',
   ];
 
-
   const [date, setDate] = useState(minimumDate);
   const [time, setTime] = useState('');
   const [numberOfGuests, setNumberGuests] = useState(1);
   const [occasion, setOccasion] = useState(occasions[0]);
   const [availableTimes, setAvailableTimes] = useState([]);
-   // Initialize with an empty array
+
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
 
   useEffect(() => {
-    // Fetch times using fetchAPI and update availableTimes
     const times = fetchAPI(new Date(date));
     setAvailableTimes(times);
-    setTime(times[0] || ''); // Sets the first time as the default
+    setTime(times[0] || '');
   }, [date]);
 
   const isDateValid = () => date !== '';
   const isTimeValid = () => time !== '';
   const isNumberOfGuestsValid = () => numberOfGuests >= 1 && numberOfGuests <= 10;
   const isOccasionValid = () => occasion !== '';
+  const isFirstNameValid = () => firstName !== '';
+  const isLastNameValid = () => lastName !== '';
+  const isEmailValid = () => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
   const areAllFieldsValid = () =>
     isDateValid() &&
     isTimeValid() &&
     isNumberOfGuestsValid() &&
-    isOccasionValid();
+    isOccasionValid() &&
+    isFirstNameValid() &&
+    isLastNameValid() &&
+    isEmailValid();
 
   const handleDateChange = e => {
     setDate(e.target.value);
@@ -58,14 +66,70 @@ const BookingForm = ({
   };
 
   const handleTimeChange = e => setTime(e.target.value);
+  const handleFirstNameChange = e => setFirstName(e.target.value);
+  const handleLastNameChange = e => setLastName(e.target.value);
+  const handleEmailChange = e => setEmail(e.target.value);
 
   const handleFormSubmit = e => {
     e.preventDefault();
-    submitData({ date, time, numberOfGuests, occasion });
+    submitData({ 
+      date, 
+      time, 
+      numberOfGuests, 
+      occasion,
+      firstName,
+      lastName,
+      email,
+    });
   };
 
   return (
-     <form onSubmit={handleFormSubmit}>
+    <form onSubmit={handleFormSubmit}>
+            <FormField 
+        label="First Name" 
+        htmlFor="booking-first-name" 
+        hasError={!isFirstNameValid()} 
+        errorMessage="Please enter your first name"
+      >
+        <input 
+          type="text" 
+          id="booking-first-name" 
+          name="booking-first-name" 
+          value={firstName} 
+          required={true} 
+          onChange={handleFirstNameChange}
+        />
+      </FormField>
+      <FormField 
+        label="Last Name" 
+        htmlFor="booking-last-name" 
+        hasError={!isLastNameValid()} 
+        errorMessage="Please enter your last name"
+      >
+        <input 
+          type="text" 
+          id="booking-last-name" 
+          name="booking-last-name" 
+          value={lastName} 
+          required={true} 
+          onChange={handleLastNameChange}
+        />
+      </FormField>
+      <FormField 
+        label="Email" 
+        htmlFor="booking-email" 
+        hasError={!isEmailValid()} 
+        errorMessage="Please enter a valid email"
+      >
+        <input 
+          type="email" 
+          id="booking-email" 
+          name="booking-email" 
+          value={email} 
+          required={true} 
+          onChange={handleEmailChange}
+        />
+      </FormField>
       <FormField 
         label="Date" 
         htmlFor="booking-date" 
@@ -120,7 +184,7 @@ const BookingForm = ({
         />
       </FormField>
       <FormField 
-        label=" What's the Occasion?" 
+        label="What's the Occasion?" 
         htmlFor="booking-occasion" 
         hasError={!isOccasionValid()} 
         errorMessage="Please choose a valid occasion"
@@ -151,6 +215,3 @@ const BookingForm = ({
 };
 
 export default BookingForm;
-
-
-

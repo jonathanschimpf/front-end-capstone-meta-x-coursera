@@ -18,7 +18,8 @@
 .site-footer h4 {
   text-transform: uppercase;
   letter-spacing: 0.1875rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  color: #F4CE14;
 }
 
 .site-footer a {
