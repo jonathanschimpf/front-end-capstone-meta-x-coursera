@@ -7,7 +7,7 @@ import './AboutUs.css';
 const AboutUs = () => {
   return (
     <section id="about" className="container grid about-us"> 
-      <div className="our-story-description">
+      <div className="about-us-description">
         <h1>Little Lemon<font size="+2"> 🍋</font></h1>
         <h2>Where Chicago Meets Italy!</h2>
 
