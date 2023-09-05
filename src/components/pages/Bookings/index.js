@@ -21,9 +21,12 @@ const Bookings = () => {
   };
 
   return (
-    <div className="bookings">
-      <h2><font size="+2"> 🍋</font> Reserve Your Table 
-      <font size="+2"> 🍋</font></h2>
+    <div className="reservations">
+      <div className="titlevw">
+      <h1>Reserve Your Table 
+      <font className="lemonCalc"> 🍋</font></h1>
+      </div>
+      <br/>
       <BookingForm
         availableTimes={availableTimes}
         dispatchOnDateChange={updateAvailableTimes}

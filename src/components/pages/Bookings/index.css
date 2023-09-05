@@ -1,10 +1,12 @@
-.bookings h2 {
-  padding: 1.875rem 0 1.875rem 0;
-  color: #495E57;
-  text-align: center;
+.reservations h1 {
+  color: #495E57!important;
+  text-align: center!important;
+  padding: 1.875rem 0 1.875rem 0 !important;
+  font-size: calc(30px + 0.390625vw) !important;
+  transition: font-size 0.3s ease; 
 }
 
-.bookings form {
+.reservations form {
   margin: 0 auto 1.875rem auto;
 }
 
@@ -20,8 +22,8 @@
   color: red;
 }
 
-.bookings button:disabled,
-.bookings button[disabled] {
+.reservations button:disabled,
+.reservations button[disabled] {
   background-color: #EDEFEE;
   border-color: #EDEFEE;
   color: #ADAFAE;
@@ -29,18 +31,43 @@
 }
 
 .button-primary:active {
-   font-weight:900;
-    color: #F4CE14;
+  font-weight: 900;
+  color: #F4CE14;
 }
 
-.confirmed-booking {
+.reservation-cormirmed {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   min-height: 35.25rem;
-  padding:  10.875rem 0 1.875rem 0;
+  padding: 10.875rem 0 1.875rem 0;
   text-align: center;
 }
 
+.lemonCalc {
+  font-size: calc(24px + 0.390625vw) !important;
+}
 
+@media (max-width: 470px) {
+  .reservations .titlevw h1 {
+    font-size: 25px !important;
+  }
+}
 
+@media (max-width: 380px) {
+  .reservations .titlevw h1 {
+    font-size: 17px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .reservations h1 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 300px) {
+  .reservations h1 {
+    font-size: 10px;
+  }
+}

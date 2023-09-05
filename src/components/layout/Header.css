@@ -23,7 +23,7 @@
 }
 
 .nav-bar-stack a:hover {
-color: #F4CE14;
+  color: #F4CE14;
 }
 
 .nav-bar-links {
@@ -60,18 +60,104 @@ color: #F4CE14;
 .current-location, 
 .nav-bar-links a:hover, 
 .nav-bar-links a:focus {
-  color:#F4CE14;
+  color: #F4CE14;
   text-decoration-color: #F4CE14;
 }
 
-/* .nav-bar .expanded {
-   background-color :#495E57;
-} */
-
-@media only screen and (max-width: 992px) {  
-
+@media only screen and (max-width: 992px) {
   .nav-bar {
     grid-template-columns: auto auto;
+  }
+
+  /* HIDDEN NAV BAR LINK QUERIES TO AVOID OVERLAP */
+
+
+
+  @media only screen and (max-width: 285px) {
+    .nav-bar-links a {
+    font-size: 0.5rem !important
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    .nav-bar-links a {
+    font-size: 0.95rem !important
+    }
+  }
+  
+  @media only screen and (max-width: 350px) {
+    .nav-bar-links a {
+    font-size: 0.8rem !important
+    }
+  }
+  @media only screen and (max-width: 330px) {
+    .nav-bar-links a {
+    font-size: 0.75rem !important
+    }
+  }
+  @media only screen and (max-width: 310px) {
+    .nav-bar-links a {
+    font-size: 0.7rem !important
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    .nav-bar-links a {
+    font-size: 0.65rem !important
+    }
+  }
+  @media only screen and (max-width: 290px) {
+    .nav-bar-links a {
+    font-size: 0.6rem !important
+    }
+  }
+  @media only screen and (max-width: 285px) {
+    .nav-bar-links a {
+    font-size: 0.5rem !important
+    }
+  }
+  @media only screen and (max-width: 205px) {
+    .nav-bar-links a {
+    font-size: 0.4rem !important
+    }
+  }  @media only screen and (max-width: 190px) {
+    .nav-bar-links a {
+    font-size: 0.38rem !important
+    }
+  }
+  @media only screen and (max-width: 180px) {
+    .nav-bar-links a {
+    font-size: 0.37rem !important
+    }
+  }
+  @media only screen and (max-width: 170px) {
+    .nav-bar-links a {
+    font-size: 0.36rem !important
+    }
+  }
+  @media only screen and (max-width: 160px) {
+    .nav-bar-links a {
+    font-size: 0.35rem !important
+    }
+  }
+  @media only screen and (max-width: 150px) {
+    .nav-bar-links a {
+    font-size: 0.34rem !important
+    }
+  }
+  @media only screen and (max-width: 140px) {
+    .nav-bar-links a {
+    font-size: 0.33rem !important
+    }
+  }
+  @media only screen and (max-width: 130px) {
+    .nav-bar-links a {
+    font-size: 0.32rem !important
+    }
+  }
+  @media only screen and (max-width: 120px) {
+    .nav-bar-links a {
+    font-size: 0.31rem !important
+    }
   }
 
   .nav-bar-stack {
@@ -99,14 +185,13 @@ color: #F4CE14;
   a {
     color: #FFFFFF;
   }
+
   .nav-bar .expanded {
-    background-color : #495E57;
- }
+    background-color: #495E57;
+  }
 
- ul.nav-bar-links.expanded {
-  border-bottom-right-radius: 2%; 
-  border-top-right-radius: 2%;
-  
- }
+  ul.nav-bar-links.expanded {
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 2%;
+  }
 }
-
