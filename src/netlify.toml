@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/menu/*"
+  to = "/menu"
+  status = 200
+
+[[redirects]]
+  from = "/bookings/*"
+  to = "/bookings"
+  status = 200
