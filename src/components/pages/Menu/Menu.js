@@ -13,9 +13,6 @@ const Menu = () => {
   </span>
 </h1>
         </div>
-        {/* <div className="logoContainer">
-          <img src={LittleLemonLogoBlack} className="littleLemonLogoBlack" alt="The Little Lemon Logo Black" />
-        </div> */}
       <div className="littleLemonMenuCentered">
         <img src={LittleLemonMenu} className="littleLemonMenuImg" alt="The Little Lemon Menu" />
       </div>

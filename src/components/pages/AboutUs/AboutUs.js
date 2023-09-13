@@ -6,10 +6,10 @@ import './AboutUs.css';
 
 const AboutUs = () => {
   return (
-    <section id="about" className="container grid about-us"> 
+    <section className="container grid about-us"> 
       <div className="about-us-description">
-        <h1>Little Lemon<font size="+2"> 🍋</font></h1>
-        <h2>Where Chicago Meets Italy!</h2>
+        <h2>Where Chicago Meets Italy!<font className="lemonCalc"> 🍋</font></h2>
+    
 
         <br/>
 

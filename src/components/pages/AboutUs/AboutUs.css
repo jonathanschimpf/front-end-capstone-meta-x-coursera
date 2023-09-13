@@ -1,15 +1,16 @@
 .about-us {
     grid-template-columns: 4fr 4fr;
     gap: 3.5rem;
+    margin-top: 2.5rem;
   }
   
   .about-us-description {
     grid-column: 1;
   }
   
-  .about-us-description h1 {
+  /* .textstroke {
     -webkit-text-stroke: 0.5px #F4CE14;
-  }
+  } */
   
   .about-us-description p {
     margin: 0.5em 0;
@@ -82,9 +83,12 @@
   
 
   /* ------------------------------------------------ */
-  /* // MEDIA QUERIES BELOW FOR RESPONSIVE DESIGN // */
+  /* // MEDIA QUERIES BELOW FOR RESPONSIVE DESIGN. // */
   /* ------------------------------------------------ */
-
+  
+  .lemonCalc {
+    font-size: calc(24px + 0.390625vw) !important;
+  }
 
   @media (min-width: 915px) {
     .about-us-chefs {
@@ -134,51 +138,20 @@
     max-width: 100%;
   }
 
-  
-  h1 {
-  font-weight: bolder;
-  }
 
-  @media (max-width: 937px) {
-    .about-us-description h1 {
-      font-size: 50px;
-    }
-  }
-
-  @media (max-width: 937px) {
+  @media (max-width: 935px) {
     .about-us-description h2 {
       font-size: 18px;
     }
   }
 
-  @media (max-width: 440px) {
-    .about-us-description h1 {
-      font-size: 50px;
-    }
-  }
+
   @media (max-width: 440px) {
     .about-us-description h2 {
       font-size: 18px;
     }
   }
 
-  @media (max-width: 395px) {
-    .about-us-description h1 {
-      font-size: 45px;
-    }
-  }
-
-  @media (max-width: 360px) {
-    .about-us-description h1 {
-      font-size: 40px;
-    }
-  }
-
-  @media (max-width: 325px) {
-    .about-us-description h1 {
-      font-size: 30px;
-    }
-  }
 
   @media (max-width: 325px) {
     .about-us-description h2 {

@@ -1,7 +1,6 @@
 import Hero from './Hero';
 import WeekSpecials from './WeekSpecials';
 import RaveReviews from './RaveReviews';
-import AboutUs from './AboutUs';
 
 
 
@@ -11,7 +10,6 @@ const Home = () => {
       <Hero />
       <WeekSpecials />
       <RaveReviews />
-      <AboutUs />
     </>
   );
 };

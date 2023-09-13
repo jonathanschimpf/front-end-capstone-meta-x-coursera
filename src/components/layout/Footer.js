@@ -1,18 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   faFacebook,
   faInstagram,
-  faYoutube
+  faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faEnvelope,
   faLocationDot,
-  faPhone
+  faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Footer.css';
 import logoWhiteImage from './assets/logo-white.png';
 import pages from '../../utils/pages';
+
+const navLinks = Array.from(pages.values()).filter(
+  page => page.anchorable && page.name !== 'Confirmed Booking'
+);
 
 const contacts = [
   { icon: faLocationDot, info: '17 W 35th St, Chicago, IL 60616' },
@@ -26,16 +31,7 @@ const socials = [
   { icon: faYoutube, name: 'youtube' },
 ];
 
-const navLinks = Array.from(pages.values()).filter(page => page.anchorable);
-
 const Footer = () => {
-  const handleNavClick = (e) => {
-    e.preventDefault();
-
-    const target = e.currentTarget.getAttribute('href');
-    window.location.href = target;
-  };
-
   return (
     <footer className="site-footer">
       <div className="container grid">
@@ -49,12 +45,9 @@ const Footer = () => {
           <ul>
             {navLinks.map((navLink, index) => (
               <li key={index}>
-                <a
-                  href={navLink.name === 'Home' ? '/' : navLink.path}
-                  onClick={handleNavClick}
-                >
+                <Link to={navLink.path}>
                   {navLink.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
