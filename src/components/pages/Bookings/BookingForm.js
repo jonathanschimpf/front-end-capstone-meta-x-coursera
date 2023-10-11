@@ -2,10 +2,7 @@ import React, { useState, useEffect } from 'react';
 import FormField from './FormField';
 import { fetchAPI } from '../../../utils/fakeAPI';
 
-const BookingForm = ({
-  dispatchOnDateChange,
-  submitData
-}) => {
+const BookingForm = ({ dispatchOnDateChange, submitData }) => {
   const minimumDate = new Date().toISOString().split('T')[0];
   const occasions = [
     'Date',
@@ -24,7 +21,7 @@ const BookingForm = ({
     'Job Promotion',
     'First Meeting',
     'Client Dinner',
-    'Team Building',
+    'Team Building'
   ];
 
   const [date, setDate] = useState(minimumDate);
@@ -32,7 +29,6 @@ const BookingForm = ({
   const [numberOfGuests, setNumberGuests] = useState(1);
   const [occasion, setOccasion] = useState(occasions[0]);
   const [availableTimes, setAvailableTimes] = useState([]);
-
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -84,8 +80,8 @@ const BookingForm = ({
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
-            <FormField 
+    <form accept-charset="UTF-8" action="https://www.formbackend.com/f/fab9441bf54fa2f0" method="POST" onSubmit={handleFormSubmit}>
+      <FormField 
         label="First Name" 
         htmlFor="booking-first-name" 
         hasError={!isFirstNameValid()} 

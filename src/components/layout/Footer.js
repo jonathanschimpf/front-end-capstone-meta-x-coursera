@@ -20,10 +20,11 @@ const navLinks = Array.from(pages.values()).filter(
 );
 
 const contacts = [
-  { icon: faLocationDot, info: '17 W 35th St, Chicago, IL 60616' },
-  { icon: faPhone, info: '(312) 599-1234' },
-  { icon: faEnvelope, info: 'imhungry@littlelemon.com' },
+  { type: 'address', icon: faLocationDot, info: '17 W 35th St, Chicago, IL 60616' },
+  { type: 'phone', icon: faPhone, info: '(312) 599-1234' },
+  { type: 'email', icon: faEnvelope, info: 'imhungry@littlelemon.com' },
 ];
+
 
 const socials = [
   { icon: faFacebook, name: 'facebook' },
@@ -55,13 +56,18 @@ const Footer = () => {
         <div className="site-footer-contact">
           <h4>Contact us</h4>
           <address>
-            {contacts.map((contact, index) => (
-              <p key={index}>
-                <FontAwesomeIcon className="yellow" icon={contact.icon} />{' '}
-                {contact.info}
-              </p>
-            ))}
-          </address>
+           {contacts.map((contact, index) => (
+           <p key={index}>
+           <FontAwesomeIcon className="yellow" icon={contact.icon} />{' '}
+           {contact.type === 'email' ? (
+           <a href={`mailto:${contact.info}`}>{contact.info}</a>
+          ) : (
+           contact.info
+          )}
+    </p>
+  ))}
+</address>
+
         </div>
         <div className="site-footer-social">
           <h4>Socials</h4>

@@ -60,14 +60,41 @@
 .current-location, 
 .nav-bar-links a:hover, 
 .nav-bar-links a:focus {
-  color: #F4CE14;
-  text-decoration-color: #F4CE14;
+  -webkit-text-stroke-width: 0.55px;
+  -webkit-text-stroke-color:  #F4CE14;
 }
 
 @media only screen and (max-width: 992px) {
   .nav-bar {
     grid-template-columns: auto auto;
   }
+
+  @media only screen and (max-width: 992px) {
+    .nav-bar {
+      grid-template-columns: auto auto;
+    }
+  }
+  
+    @media only screen and (max-width: 992px) {
+      .current-location, 
+      .nav-bar-links a:hover, 
+      .nav-bar-links a:focus  {
+          color: #F4CE14;
+          text-decoration-color:  #F4CE14;
+      }
+    }
+  
+      .nav-bar .expanded {
+        background-color: #495E57;
+      }
+  
+    ul.nav-bar-links.expanded {
+      border-bottom-right-radius: 2%;
+      border-top-right-radius: 2%;
+    }
+  
+  
+    /* HIDDEN NAV BAR LINK QUERIES TO AVOID OVERLAP */
 
   /* HIDDEN NAV BAR LINK QUERIES TO AVOID OVERLAP */
 
@@ -189,6 +216,7 @@
   .nav-bar .expanded {
     background-color: #495E57;
   }
+  
 
   ul.nav-bar-links.expanded {
     border-bottom-right-radius: 2%;
