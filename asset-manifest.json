@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/front-end-capstone-meta-x-coursera/static/css/main.aadc4375.css",
+    "main.js": "/front-end-capstone-meta-x-coursera/static/js/main.b5c20fb0.js",
+    "static/js/787.76d6e93f.chunk.js": "/front-end-capstone-meta-x-coursera/static/js/787.76d6e93f.chunk.js",
+    "static/media/cacioEPepe.png": "/front-end-capstone-meta-x-coursera/static/media/cacioEPepe.5f3b74f1b020c93f4dbf.png",
+    "static/media/littlelemoncookingteam-1.png": "/front-end-capstone-meta-x-coursera/static/media/littlelemoncookingteam-1.39a3d54bce87b87c9a05.png",
+    "static/media/Headshot_IsabelaSantos.jpg": "/front-end-capstone-meta-x-coursera/static/media/Headshot_IsabelaSantos.55ed04815bb52da99b20.jpg",
+    "static/media/littlelemoncookingteam-2.png": "/front-end-capstone-meta-x-coursera/static/media/littlelemoncookingteam-2.1a9d6dee9e56a042b5ac.png",
+    "static/media/littlelemoncookingteam-3.png": "/front-end-capstone-meta-x-coursera/static/media/littlelemoncookingteam-3.fbd64d2212887ed02777.png",
+    "static/media/Headshot_KevinNguyen.jpg": "/front-end-capstone-meta-x-coursera/static/media/Headshot_KevinNguyen.5c76cf52456e1b2931b9.jpg",
+    "static/media/Headshot_SarahGarrison.jpg": "/front-end-capstone-meta-x-coursera/static/media/Headshot_SarahGarrison.578f6453e50ba19e021f.jpg",
+    "static/media/Headshot_MalikCarter.jpg": "/front-end-capstone-meta-x-coursera/static/media/Headshot_MalikCarter.5d73dcedb481b8d8d418.jpg",
+    "static/media/risottoallamilanese.jpg": "/front-end-capstone-meta-x-coursera/static/media/risottoallamilanese.c33a04a9ff16641632b5.jpg",
+    "static/media/littlelemonbars.jpg": "/front-end-capstone-meta-x-coursera/static/media/littlelemonbars.ee7903ccd308471fc1dc.jpg",
+    "static/media/Little-Lemon-Menu.png": "/front-end-capstone-meta-x-coursera/static/media/Little-Lemon-Menu.c0fc3f2d73bf5d8ac80f.png",
+    "static/media/tastygrublittlelemon.jpeg": "/front-end-capstone-meta-x-coursera/static/media/tastygrublittlelemon.db97a8479ca2276c8eea.jpeg",
+    "static/media/logo-white.png": "/front-end-capstone-meta-x-coursera/static/media/logo-white.d09eb2af6c5a2225eedf.png",
+    "static/media/logo.png": "/front-end-capstone-meta-x-coursera/static/media/logo.e68246686f716ff6e5d8.png",
+    "index.html": "/front-end-capstone-meta-x-coursera/index.html",
+    "main.aadc4375.css.map": "/front-end-capstone-meta-x-coursera/static/css/main.aadc4375.css.map",
+    "main.b5c20fb0.js.map": "/front-end-capstone-meta-x-coursera/static/js/main.b5c20fb0.js.map",
+    "787.76d6e93f.chunk.js.map": "/front-end-capstone-meta-x-coursera/static/js/787.76d6e93f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aadc4375.css",
+    "static/js/main.b5c20fb0.js"
+  ]
+}
